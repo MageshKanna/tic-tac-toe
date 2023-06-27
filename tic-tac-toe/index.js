@@ -19,10 +19,9 @@ let count = 0;
 subContainer.forEach((subContainer, index) => {
   subContainer.addEventListener('click', () => {
     count++;
-    console.log(`Clicked on Sub Container ${index + 1}`);
     if(count % 2 == 0)subContainer.innerHTML = "O";
     if(count % 2 != 0)subContainer.innerHTML = "X";
-    console.log(count);
+
   });
 });
 
